@@ -205,8 +205,6 @@ function App() {
             <input onChange={(e)=>set_password(e.target.value.replaceAll(' ',''))} value={password} type='password' placeholder='nahi-bataunga'></input>
             <button onClick={(e)=>
               {
-                if(e.target.disabled){return}
-                e.target.disabled=true
                 if(!login_menu && (email.length>30 || email.length===0 || password.length>12 || password.length===0 || fullname.length>12 || fullname.length===0))
                 {
                   set_dialog_value(
