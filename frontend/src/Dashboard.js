@@ -141,7 +141,6 @@ export default function Dashboard()
                         <date><i class="fa-solid fa-calendar" style={{marginRight:'15px'}}></i>{filtered_events[index*2].date}</date>
                         <time_info><i class="fa-solid fa-clock" style={{marginRight:'12px'}}></i>{filtered_events[index*2].time}</time_info>
                         <location_info><i class="fa-solid fa-location-dot" style={{marginRight:'18px'}}></i>{filtered_events[index*2].location}</location_info>
-                        <people><i class="fa-solid fa-users" style={{marginRight:'10px'}}></i>{filtered_events[index*2].registrations} Registrations</people>
                         <trophy><i class="fa-solid fa-trophy" style={{marginRight:'11px'}}></i>{filtered_events[index*2].trophy}</trophy>
                         <button onClick={(e)=>{
                             if(e.target.disabled){return}
@@ -189,7 +188,6 @@ export default function Dashboard()
                         <date><i class="fa-solid fa-calendar" style={{marginRight:'15px'}}></i>{!filtered_events[index*2+1]?'':filtered_events[index*2+1].date}</date>
                         <time_info><i class="fa-solid fa-clock" style={{marginRight:'12px'}}></i>{!filtered_events[index*2+1]?'':filtered_events[index*2+1].time}</time_info>
                         <location_info><i class="fa-solid fa-location-dot" style={{marginRight:'18px'}}></i>{!filtered_events[index*2+1]?'':filtered_events[index*2+1].location}</location_info>
-                        <people><i class="fa-solid fa-users" style={{marginRight:'10px'}}></i>{!filtered_events[index*2+1]?'':filtered_events[index*2+1].registrations} Registrations</people>
                         <trophy><i class="fa-solid fa-trophy" style={{marginRight:'11px'}}></i>{!filtered_events[index*2+1]?'':filtered_events[index*2+1].trophy}</trophy>
                         <button onClick={(e)=>{
                             if(e.target.disabled){return}
